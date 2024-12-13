@@ -27,6 +27,7 @@ def removeBackgroundFolder(rpath):
             # cv2.destroyAllWindows()
             print(".",end="")
         print()
+
 def singleRemoveBackground(imagepathName):
     ori_img = cv2.imread(rpath + "\\" + folder + "\\" + f_name)
     ori_img = cv2.resize(ori_img, (256, 256))
@@ -34,7 +35,7 @@ def singleRemoveBackground(imagepathName):
     rmbg_img = remove(ori_img)
     cv2.imwrite(imagePathName)
     print("배경이미지 제거가 완료되었습니다.")
-if __name__"__main__":
+if __name__=="__main__":
     pass #이 파일을 직접 실행했을때 작동 코드
 else:
     pass #다른 파일에서 ,import 시 작동되는 코드
